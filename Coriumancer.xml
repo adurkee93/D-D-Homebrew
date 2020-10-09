@@ -9,7 +9,7 @@
 		</update>
 	</info>
 	
-	<element name="Artificer" type="Class" source="Homebrew" id="ID_WIKI_UA20190228_CLASS_ARTIFICER">
+	<element name="Artificer (HB)" type="Class" source="Homebrew" id="ID_WIKI_UA20190228_CLASS_ARTIFICER">
 		<description>
 			<p>Masters of unlocking magic in everyday objects, artificers are supreme inventors. They see magic as a complex system waiting to be decoded and controlled. Artificers use tools to channel arcane power, crafting temporary and permanent magical objects. To cast a spell, an artificer could use alchemist’s supplies to create a potent elixir, calligrapher’s supplies to inscribe a sigil of power on an ally’s armor, or tinker’s tools to craft a temporary charm. The magic of artificers is tied to their tools and their talents.</p>
 			<h4>ARCANE SCIENCE</h4>
@@ -87,9 +87,9 @@
 			<select type="Proficiency" name="Skill Proficiency, Artificer" number="2" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" requirements="!ID_WOTC_UA20190228_MULTICLASS_ARTIFICER" />
 
 			<grant type="Class Feature" id="ID_WOTC_UA20190228_CLASS_FEATURE_ARTIFICER_MAGICAL_TINKERING" level="1" />
-			<grant type="Class Feature" id="ID_WOTC_UA20190228_CLASS_FEATURE_ARTIFICER_SPELLCASTING" level="1" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ARTIFICER_SPELLCASTING" level="1" />
 			<grant type="Class Feature" id="ID_WOTC_UA20190228_CLASS_FEATURE_ARTIFICER_INFUSE_ITEM" level="2" />
-			<grant type="Class Feature" id="ID_WOTC_UA20190228_CLASS_FEATURE_ARTIFICER_ARTIFICER_SPECIALIST" level="3" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ARTIFICER_ARTIFICER_SPECIALIST" level="3" />
 			<grant type="Class Feature" id="ID_WOTC_UA20190228_CLASS_FEATURE_ARTIFICER_TOOL_EXPERTISE" level="3" />
 			<grant type="Class Feature" id="ID_WOTC_UA20190228_CLASS_FEATURE_ARTIFICER_ABILITY_SCORE_IMPROVEMENT" level="4" />
 			<grant type="Class Feature" id="ID_WOTC_UA20190228_CLASS_FEATURE_ARTIFICER_ARCANE_ARMAMENT" level="5" />
@@ -108,34 +108,7 @@
 			</rules>
 		</multiclass>
 	</element>
-	<element name="Magical Tinkering" type="Class Feature" source="Unearthed Arcana: Artificer Revisited" id="ID_WOTC_UA20190228_CLASS_FEATURE_ARTIFICER_MAGICAL_TINKERING">
-		<description>
-			<p>At 1st level, you learn how to invest a spark of magic in objects that would otherwise be mundane. To use this ability, you must have thieves’ tools, tinker’s tools, or other artisan’s tools in hand. You then touch a Tiny nonmagical object as an action and give it one of the following magical properties of your choice:</p>
-			<ul>
-				<li>The object sheds bright light in a 5-foot radius and dim light for an additional 5 feet.</li>
-				<li>Whenever tapped by a creature, the object emits a recorded message that can be heard up to 10 feet away. You utter the message when you bestow this property on the object, and the recording can be no more than 6 seconds long.</li>
-				<li>The object continuously emits your choice of an odor or a nonverbal sound (wind, waves, chirping, or the like). The chosen phenomenon is perceivable up to 10 feet away.</li>
-				<li>A static visual effect appears on one of the object’s surfaces. This effect can be a picture, up to 25 words of text, lines and shapes, or a mixture of these elements, as you like.</li>
-			</ul>
-			<p>The chosen property lasts indefinitely. As an action, you can touch the object and end the property early.</p>
-			<p class="indent">You can give the magic of this feature to multiple objects, touching one object each time you use the feature, and a single object can bear only one of the properties at a time. The maximum number of objects you can affect with the feature at one time is equal to your Intelligence modifier (minimum of one object). If you try to exceed your maximum, the oldest property immediately ends, and then the new property applies.</p>
-		</description>
-		<sheet>
-			<description>You must have thieves’ tools, tinker’s tools, or other artisan’s tools in hand. 
-			You then touch a Tiny nonmagical object as an action and give it one of the following magical properties of your choice:
-			The object sheds bright light in a 5-foot radius and dim light for an additional 5 feet.
-			Whenever tapped by a creature, the object emits a recorded message that can be heard up to 10 feet away. You utter the message when you bestow this property on the object, and the recording can be no more than 6 seconds long.
-			The object continuously emits your choice of an odor or a nonverbal sound (wind, waves, chirping, or the like). The chosen phenomenon is perceivable up to 10 feet away.
-			A static visual effect appears on one of the object’s surfaces. This effect can be a picture, up to 25 words of text, lines and shapes, or a mixture of these elements, as you like.
-			The chosen property lasts indefinitely. As an action, you can touch the object and end the property early.
-			You can give the magic of this feature to {{magical tinkering:objects}} objects, touching one object each time you use the feature, and a single object can bear only one of the properties at a time. If you try to exceed your maximum, the oldest property immediately ends, and then the new property applies.</description>
-		</sheet>
-		<rules>
-			<stat name="magical tinkering:objects" value="1" bonus="magical tinkering" />
-			<stat name="magical tinkering:objects" value="intelligence:modifier" bonus="magical tinkering" />
-		</rules>
-	</element>
-	<element name="Spellcasting" type="Class Feature" source="Unearthed Arcana: Artificer Revisited" id="ID_WOTC_UA20190228_CLASS_FEATURE_ARTIFICER_SPELLCASTING">
+	<element name="Spellcasting" type="Class Feature" source="Homebrew" id="ID_HOMEBREW_CLASS_FEATURE_ARTIFICER_SPELLCASTING">
 		<description>
 			<p>You have studied the workings of magic, how to channel it through objects, and how to awaken it within them. As a result, you have gained a limited ability to cast spells. To observers, you don’t appear to be casting spells in a conventional way; you look as if you’re producing wonders through various items.</p>
 			<h5>TOOLS REQUIRED</h5>
@@ -198,46 +171,7 @@
 			<select type="Spell" name="Cantrip (Artificer)" supports="$(spellcasting:list), 0" level="14" number="1" spellcasting="Artificer" />
 		</rules>
 	</element>
-	<element name="Infuse Item" type="Class Feature" source="Unearthed Arcana: Artificer Revisited" id="ID_WOTC_UA20190228_CLASS_FEATURE_ARTIFICER_INFUSE_ITEM">
-		<description>
-			<p>At 2nd level, you gain the ability to imbue mundane items with certain magical infusions. The magic items you create with this feature are effectively prototypes of permanent items.</p>
-			<h5>INFUSIONS KNOWN</h5>
-			<p>When you gain this feature, pick two artificer infusions to learn, choosing from the “Artificer Infusions” section at the end of the class’s description. You learn additional infusions of your choice when you reach certain levels in this class, as shown in the Infusions Known column of the Artificer table.</p>
-			<p class="indent">Whenever you gain a level in this class, you can replace one of the artificer infusions you learned with a new one.</p>
-			<h5>INFUSING AN ITEM</h5>
-			<p>Whenever you finish a long rest, you can touch a nonmagical object and imbue it with one of your artificer infusions, turning it into a magic item. An infusion works on only certain kinds of objects, as specified in the infusion’s description. If the item requires attunement, you can attune yourself to it the instant you infuse the item, or you can forgo attunement so that someone else can attune to the item. If you decide to attune to the item later, you must do so using the normal process for attunement (see “Attunement” in the Dungeon Master’s Guide, page 136).</p>
-			<p class="indent">Your infusion remains in an item indefinitely, but when you die, the infusion vanishes after a number of days have passed equal to your Intelligence modifier (minimum of 1 day). The infusion also vanishes if you give up your knowledge of the infusion for another one.</p>
-			<p class="indent">You can infuse more than one nonmagical object at the end of a long rest; the maximum number of objects appears in the Infused Items column of the Artificer table. You must touch each of the objects, and each of your infusions can be in only one object at a time. If you try to exceed your maximum number of infusions, the oldest infusion immediately ends, and then the new infusion applies.</p>
-		</description>
-		<sheet usage="{{infusions:items}} Maximum">
-			<description>Whenever you finish a long rest, you can touch a nonmagical object and imbue it with one of your artificer infusions, turning it into a magic item.</description>
-		</sheet>
-		<rules>			
-			<stat name="infusions:count" value="3" bonus="base" level="2" />
-			<stat name="infusions:count" value="4" bonus="base" level="4" />
-			<stat name="infusions:count" value="5" bonus="base" level="7" />
-			<stat name="infusions:count" value="6" bonus="base" level="11" />
-			<stat name="infusions:count" value="7" bonus="base" level="15" />
-			<stat name="infusions:count" value="8" bonus="base" level="19" />
-
-			<stat name="infusions:items" value="2" bonus="base" level="2" />
-			<stat name="infusions:items" value="3" bonus="base" level="6" />
-			<stat name="infusions:items" value="4" bonus="base" level="11" />
-			<stat name="infusions:items" value="5" bonus="base" level="16" />
-
-			<stat name="infusions:vanish" value="1" bonus="infusions" />
-			<stat name="infusions:vanish" value="intelligence:modifier" bonus="infusions" />
-
-			<!-- select infusions -->
-			<select type="Class Feature" name="Artificer Infusion, Level 2" supports="UA Artificer Infusion" number="3" level="2" />
-			<select type="Class Feature" name="Artificer Infusion, Level 4 " supports="UA Artificer Infusion" level="4" />
-			<select type="Class Feature" name="Artificer Infusion, Level 7 " supports="UA Artificer Infusion" level="7" />
-			<select type="Class Feature" name="Artificer Infusion, Level 11 " supports="UA Artificer Infusion" level="11" />
-			<select type="Class Feature" name="Artificer Infusion, Level 15" supports="UA Artificer Infusion" level="15" />
-			<select type="Class Feature" name="Artificer Infusion, Level 19" supports="UA Artificer Infusion" level="19" />
-		</rules>
-	</element>
-	<element name="Artificer Specialist" type="Class Feature" source="Unearthed Arcana: Artificer Revisited" id="ID_WOTC_UA20190228_CLASS_FEATURE_ARTIFICER_ARTIFICER_SPECIALIST">
+	<element name="Artificer Specialist" type="Class Feature" source="Homebrew" id="ID_HOMEBREW_CLASS_FEATURE_ARTIFICER_ARTIFICER_SPECIALIST">
 		<description>
 			<p>At 3rd level, you choose the type of specialist you are: Alchemist or Artillerist, each of which is detailed at the end of the class’s description. Your choice grants you features at 3rd level and again at 6th and 14th level.</p>
 			<div class="sidebar">
@@ -248,75 +182,6 @@
 		<sheet display="false" />
 		<rules>
 			<select type="Archetype" name="Artificer Specialist" supports="Homebrew Artificer Specialist" />
-		</rules>
-	</element>
-	<element name="Tool Expertise" type="Class Feature" source="Unearthed Arcana: Artificer Revisited" id="ID_WOTC_UA20190228_CLASS_FEATURE_ARTIFICER_TOOL_EXPERTISE">
-		<description>
-			<p>Starting at 3rd level, your proficiency bonus is doubled for any ability check you make that uses your proficiency with a tool.</p>
-		</description>
-		<sheet>
-			<description>Your proficiency bonus is doubled for any ability check you make that uses your proficiency with a tool.</description>
-		</sheet>
-	</element>
-	<element name="Ability Score Improvement" type="Class Feature" source="Unearthed Arcana: Artificer Revisited" id="ID_WOTC_UA20190228_CLASS_FEATURE_ARTIFICER_ABILITY_SCORE_IMPROVEMENT">
-		<compendium display="false" />
-		<description>
-			<p>When you reach 4th, 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<select type="Class Feature" name="Improvement Option, Artificer Level 4" supports="Improvement Option,UA Artificer,4" level="4" />
-			<select type="Class Feature" name="Improvement Option, Artificer Level 8" supports="Improvement Option,UA Artificer,8" level="8" />
-			<select type="Class Feature" name="Improvement Option, Artificer Level 12" supports="Improvement Option,UA Artificer,12" level="12" />
-			<select type="Class Feature" name="Improvement Option, Artificer Level 16" supports="Improvement Option,UA Artificer,16" level="16" />
-			<select type="Class Feature" name="Improvement Option, Artificer Level 19" supports="Improvement Option,UA Artificer,19" level="19" />
-		</rules>
-	</element>
-	<element name="Arcane Armament" type="Class Feature" source="Unearthed Arcana: Artificer Revisited" id="ID_WOTC_UA20190228_CLASS_FEATURE_ARTIFICER_ARCANE_ARMAMENT">
-		<description>
-			<p>Starting at 5th level, you can attack twice, rather than once, whenever you take the Attack action on your turn, but one of the attacks must be made with a magic weapon, the magic of which you use to propel the attack.</p>
-		</description>
-		<sheet>
-			<description>You can attack twice, rather than once, whenever you take the Attack action on your turn, but one of the attacks must be made with a magic weapon, the magic of which you use to propel the attack.</description>
-		</sheet>
-		<rules>
-			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
-		</rules>
-	</element>
-	<element name="The Right Cantrip for the Job" type="Class Feature" source="Unearthed Arcana: Artificer Revisited" id="ID_WOTC_UA20190228_CLASS_FEATURE_ARTIFICER_THE_RIGHT_CANTRIP_FOR_THE_JOB">
-		<description>
-			<p>At 10th level, you gain the ability to make sure you have the right magical tool for a job. Whenever you finish a short or long rest, you can replace one of the artificer cantrips you know with another cantrip from the artificer spell list.</p>
-		</description>
-		<sheet>
-			<description>Whenever you finish a short or long rest, you can replace one of the artificer cantrips you know with another cantrip from the artificer spell list.</description>
-		</sheet>
-	</element>
-	<element name="Spell-Storing Item" type="Class Feature" source="Unearthed Arcana: Artificer Revisited" id="ID_WOTC_UA20190228_CLASS_FEATURE_ARTIFICER_SPELL_STORING_ITEM">
-		<description>
-			<p>When you reach 18th level, you learn how to store a spell in an object for repeated use. Whenever you finish a long rest, you can touch one simple or martial weapon or an item that you can use as a spellcasting focus and store a spell in it, choosing one 1st- or 2nd-level spell from the artificer spell list that requires 1 action to cast (you don’t need to have the spell prepared). With the object in hand, a creature can take an action to produce the spell’s effect from it, using your spellcasting ability modifier.</p>
-			<p class="indent">The spell stays in the object until it has been used a number of times equal to twice your Intelligence modifier (minimum of twice) or until you use this feature again.</p>
-		</description>
-		<sheet>
-			<description>Whenever you finish a long rest, you can touch one simple or martial weapon or an item that you can use as a spellcasting focus and store a spell in it, choosing one 1st- or 2nd-level spell from the artificer spell list that requires 1 action to cast (you don’t need to have the spell prepared). With the object in hand, a creature can take an action to produce the spell’s effect from it, using your spellcasting ability modifier.
-			The spell stays in the object until it has been used {{spell-storing:usage}} times or until you use this feature again.</description>
-		</sheet>
-		<rules>
-			<stat name="spell-storing:intelligence" value="intelligence:modifier" />
-			<stat name="spell-storing:intelligence" value="intelligence:modifier" />
-
-			<stat name="spell-storing:usage" value="2" bonus="spell-storing" />
-			<stat name="spell-storing:usage" value="spell-storing:intelligence" bonus="spell-storing" />
-		</rules>
-	</element>
-	<element name="Soul of Artifice" type="Class Feature" source="Unearthed Arcana: Artificer Revisited" id="ID_WOTC_UA20190228_CLASS_FEATURE_ARTIFICER_SOUL_OF_ARTIFICE">
-		<description>
-			<p>At 20th level, your understanding of magic items is unmatched, allowing you to mingle your soul with items linked to you. You can attune to up to six magic items at once. In addition, you gain a +1 bonus to all saving throws per magic item you are currently attuned to.</p>
-		</description>
-		<sheet>
-			<description>You can attune to up to six magic items at once. In addition, you gain a +1 bonus to all saving throws per magic item you are currently attuned to.</description>
-		</sheet>
-		<rules>
-			<stat name="attunement:max" value="6" bonus="base" />
 		</rules>
 	</element>
 	
