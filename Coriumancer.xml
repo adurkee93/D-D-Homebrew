@@ -277,7 +277,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_MASS_HEALING_WORD" level="9" spellcasting="Artificer" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_REVIVIFY" level="9" spellcasting="Artificer" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" level="13" spellcasting="Artificer" prepared="true" />
-			<grant type="Spell" id="ID_XGE_SPELL_LIFE_TRANSFERENCE" level="13" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_LIFE_TRANSFERENCE" level="13" spellcasting="Artificer" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" level="17" spellcasting="Artificer" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_MASS_CURE_WOUNDS" level="17" spellcasting="Artificer" prepared="true" />
 		</rules>
