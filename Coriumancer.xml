@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Coriumancer</name>
+		<description>The Artificer Coriumancer from the D&amp;D Wiki.</description>
+		<author url="https://github.com/adurkee93/D-D-Homebrew/blob/main/Coriumancer.xml">Durkmenistan</author>
+	</info>
+
+	<element name="Coriumancer" type="Archetype" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_CIRCLEOFTHECLAW">
+		<supports>Artificer Specialist</supports>
+		<description>
+			<p>When the battle’s over, the average party leaves the most valuable loot behind. The Coriumancer recognizes the innate power of flesh, and utilizes their skill to empower their party with the abilities of their defeated foes. The Coriumancer’s expertise allows them to moonlight as a healer as well. </p>
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_FLESH_FETISH" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_BODYSNATCHER" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_TAXIDERMIST" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_TROPHY_HUNTER" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_LEND_A_HAND" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_CORPSE_EATER" />
+		</description>
+		<sheet>
+			<description>The Coriumancer focuses on casting buffs using catalysts created from corpses of defeated foes.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" name="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_FLESH_FETISH" level="3" />
+			<grant type="Archetype Feature" name="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_BODYSNATCHER" level="3" />
+			<grant type="Archetype Feature" name="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_TAXIDERMIST" level="5" />
+			<grant type="Archetype Feature" name="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_TROPHY_HUNTER" level="9" />
+			<grant type="Archetype Feature" name="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_LEND_A_HAND" level="11" />
+			<grant type="Archetype Feature" name="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_CORPSE_EATER" level="15" />
+			<grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_AID" level="5" />
+			<grant type="Spell" id="ID_PHB_SPELL_GENTLE_REPOSE" level="5" />
+			<grant type="Spell" id="ID_PHB_SPELL_MASS_HEALING_WORD" level="9" />
+			<grant type="Spell" id="ID_PHB_SPELL_REVIVIFY" level="9" />
+			<grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" level="13" />
+			<grant type="Spell" id="ID_XGE_SPELL_LIFE_TRANSFERENCE" level="13" />
+			<grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" level="17" />
+			<grant type="Spell" id="ID_PHB_SPELL_MASS_CURE_WOUNDS" level="17" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SURGEONS_TOOLS" level="3"/>
+		</rules>
+	</element>
+	
+	<element name="Tool Proficiency (Surgeon's Tools)" type="Archetype Feature" source="D&amp;D Wiki" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SURGEONS_TOOLS">
+		<supports>Tool Proficiency</supports>
+		<description>
+			<p>Proficiency with surgeon's tools</p>
+		</description>
+		<sheet>
+			<description>Proficiency with surgeon's tools</description>
+		</sheet>
+		<rules>
+		<rules />
+	</element>
+
+	<element name="Flesh Fetish" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_FLESH_FETISH">
+		<description>
+			<p>When you reach 3rd level, your focus in the art of coriumancy has resulted in the devolution of your skills in other areas. Besides the innate prepared spells of the subclass, you can no longer prepare Artificer spells normally. Instead, you may prepare only spells for which you have a coriumancy catalyst in your possession.</p>
+		</description>
+		<sheet>
+			<description>When you reach 3rd level, your focus in the art of coriumancy has resulted in the devolution of your skills in other areas. Besides the innate prepared spells of the subclass, you can no longer prepare Artificer spells normally. Instead, you may prepare only spells for which you have a coriumancy catalyst in your possession.</description>
+		</sheet>
+		<rules>
+		<rules />
+	</element>
+	
+	<element name="Bodysnatcher" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_BODYSNATCHER">
+		<description>
+			<p>Beginning at 3rd level, you acquire the ability to create a basic coriumancy catalyst, a non-magical item derived from a fresh corpse or living body. You must have appropriate tools and proficiency to harvest the specimen. The creature of origin must be of the same or lower level as you, and the catalyst must be properly extracted from the creature. Basic catalysts have a decay rate, with items made from flesh and blood becoming invalid faster than those of horn or carapace. You may analyze an existing specimen you encounter, to determine whether it may function as a basic catalyst.\nStarting at 3rd level, you may prepare any spells during a long rest for which you have a basic catalyst in your possession. When a spell associated with a basic catalyst is cast, one specimen of that catalyst in the caster’s possession is permanently consumed.</p>
+		</description>
+		<sheet>
+			<description>Beginning at 3rd level, you acquire the ability to create a basic coriumancy catalyst, a non-magical item derived from a fresh corpse or living body. You must have appropriate tools and proficiency to harvest the specimen. The creature of origin must be of the same or lower level as you, and the catalyst must be properly extracted from the creature. Basic catalysts have a decay rate, with items made from flesh and blood becoming invalid faster than those of horn or carapace. You may analyze an existing specimen you encounter, to determine whether it may function as a basic catalyst.\nStarting at 3rd level, you may prepare any spells during a long rest for which you have a basic catalyst in your possession. When a spell associated with a basic catalyst is cast, one specimen of that catalyst in the caster’s possession is permanently consumed.</description>
+		</sheet>
+		<rules>
+		<rules />
+	</element>
+	
+	<element name="Taxidermist" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_TAXIDERMIST">
+		<description>
+			<p>Beginning at 5th level, you acquire the ability to create a preserved coriumancy catalyst, a magical item made from a basic coriumancy catalyst that has not yet decayed. You must have appropriate tools and proficiency to preserve the basic catalyst, but the method can vary, and may include crystallization, drying, embalming, encasement in glass, petrification, plastination, smoking, tanning, etc. Improper storage of a preserved catalyst, such as embalming a hand and keeping it in your backpack without protecting it from bludgeoning damage, may result in its dysfunction. You may analyze an existing trinket or other item you encounter, to determine whether it may function as a preserved catalyst.\nStarting at 5th level, during a long rest, you may prepare any spells for which you have an attuned preserved catalyst in your possession as cantrips instead of spells. When a cantrip or spell associated with a preserved catalyst is cast, nothing is consumed (besides a spell slot, if applicable).</p>
+		</description>
+		<sheet>
+			<description>Beginning at 5th level, you acquire the ability to create a preserved coriumancy catalyst, a magical item made from a basic coriumancy catalyst that has not yet decayed. You must have appropriate tools and proficiency to preserve the basic catalyst, but the method can vary, and may include crystallization, drying, embalming, encasement in glass, petrification, plastination, smoking, tanning, etc. Improper storage of a preserved catalyst, such as embalming a hand and keeping it in your backpack without protecting it from bludgeoning damage, may result in its dysfunction. You may analyze an existing trinket or other item you encounter, to determine whether it may function as a preserved catalyst.\nStarting at 5th level, during a long rest, you may prepare any spells for which you have an attuned preserved catalyst in your possession as cantrips instead of spells. When a cantrip or spell associated with a preserved catalyst is cast, nothing is consumed (besides a spell slot, if applicable).</description>
+		</sheet>
+		<rules>
+		<rules />
+	</element>
+
+	<element name="Trophy Hunter" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_TROPHY_HUNTER">
+		<description>
+			<p>At 9th level, you may fashion a basic catalyst from any creature killed by your party, regardless of level. The targets of your catalyst-based casts no longer need to be willing. </p>
+		</description>
+		<sheet>
+			<description>At 9th level, you may fashion a basic catalyst from any creature killed by your party, regardless of level. The targets of your catalyst-based casts no longer need to be willing. </description>
+		</sheet>
+		<rules>
+		<rules />
+	</element>
+
+	<element name="Lend a Hand" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_LEND_A_HAND">
+		<description>
+			<p>At 11th level, you do not gain the ability to store spells with objects like other Artificers, since to an extent Coriumancers already do this. Instead, whenever you finish a long rest, you can touch one preserved catalyst and make its spell accessible to other creatures at 2nd-level. While holding the modified catalyst, a creature can take an action to produce the spell's effect from it using your spellcasting ability modifier. The spell stays in the object until it has been used a number of times equal to twice your Intelligence modifier (minimum of twice) or until you use this feature again to store a spell in an object. </p>
+		</description>
+		<sheet>
+			<description>At 11th level, you do not gain the ability to store spells with objects like other Artificers, since to an extent Coriumancers already do this. Instead, whenever you finish a long rest, you can touch one preserved catalyst and make its spell accessible to other creatures at 2nd-level. While holding the modified catalyst, a creature can take an action to produce the spell's effect from it using your spellcasting ability modifier. The spell stays in the object until it has been used a number of times equal to twice your Intelligence modifier (minimum of twice) or until you use this feature again to store a spell in an object. </description>
+		</sheet>
+		<rules>
+		<rules />
+	</element>
+
+	<element name="Corpse Eater" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_CORPSE_EATER">
+		<description>
+			<p>At 15th level, you may use a fresh corpse that you are touching as a catalyst, and cast a single spell of a spell level of your choice which grants every status harvestable from the corpse. The spell may target as many creatures within range as you like, but no catalysts may be made from the corpse afterward.</p>
+		</description>
+		<sheet>
+			<description>At 15th level, you may use a fresh corpse that you are touching as a catalyst, and cast a single spell of a spell level of your choice which grants every status harvestable from the corpse. The spell may target as many creatures within range as you like, but no catalysts may be made from the corpse afterward.</description>
+		</sheet>
+		<rules>
+		<rules />
+	</element>
+
+</elements>
