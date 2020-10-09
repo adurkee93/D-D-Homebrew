@@ -184,6 +184,63 @@
 			<select type="Archetype" name="Artificer Specialist" supports="Homebrew Artificer Specialist" />
 		</rules>
 	</element>
+	<append id="ID_PHB_SPELL_ACID_SPLASH">
+		<supports>Homebrew Artificer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_DANCING_LIGHTS">
+		<supports>Homebrew Artificer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FIRE_BOLT">
+		<supports>Homebrew Artificer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GUIDANCE">
+		<supports>Homebrew Artificer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_LIGHT">
+		<supports>Homebrew Artificer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MAGE_HAND">
+		<supports>Homebrew Artificer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MENDING">
+		<supports>Homebrew Artificer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_MESSAGE">
+		<supports>Homebrew Artificer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_POISON_SPRAY">
+		<supports>Homebrew Artificer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_PRESTIDIGITATION">
+		<supports>Homebrew Artificer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_RAY_OF_FROST">
+		<supports>Homebrew Artificer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_RESISTANCE">
+		<supports>Homebrew Artificer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SHOCKING_GRASP">
+		<supports>Homebrew Artificer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_SPARE_THE_DYING">
+		<supports>Homebrew Artificer</supports>
+	</append>
+	<append id="ID_PHB_SPELL_THORN_WHIP">
+		<supports>Homebrew Artificer</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_CREATE_BONFIRE">
+		<supports>Homebrew Artificer</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_FROSTBITE">
+		<supports>Homebrew Artificer</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_MAGIC_STONE">
+		<supports>Homebrew Artificer</supports>
+	</append>
+	<append id="ID_XGTE_SPELL_THUNDERCLAP">
+		<supports>Homebrew Artificer</supports>
+	</append>
 	
 	<element name="Coriumancer" type="Archetype" source="Homebrew" id="ID_WIKI_ARCHETYPE_CORIUMANCER">
 		<supports>Homebrew Artificer Specialist</supports>
