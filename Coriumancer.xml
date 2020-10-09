@@ -13,6 +13,7 @@
 		<supports>UA Artificer Specialist</supports>
 		<description>
 			<p>When the battle’s over, the average party leaves the most valuable loot behind. The Coriumancer recognizes the innate power of flesh, and utilizes their skill to empower their party with the abilities of their defeated foes. The Coriumancer’s expertise allows them to moonlight as a healer as well. </p>
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_TOOLS_OF_THE_TRADE" />
 			<div element="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_FLESH_FETISH" />
 			<div element="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_BODYSNATCHER" />
 			<div element="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_TAXIDERMIST" />
@@ -27,12 +28,13 @@
 			<description>The Coriumancer focuses on casting buffs using catalysts created from corpses of defeated foes.</description>
 		</sheet>
 		<rules>
+			<grant type="Class Feature" id="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_TOOLS_OF_THE_TRADE" level="3" />
 			<grant type="Archetype Feature" name="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_FLESH_FETISH" level="3" />
 			<grant type="Archetype Feature" name="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_BODYSNATCHER" level="3" />
 			<grant type="Archetype Feature" name="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_TAXIDERMIST" level="5" />
 			<grant type="Archetype Feature" name="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_TROPHY_HUNTER" level="9" />
 			<grant type="Archetype Feature" name="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_CORPSE_EATER" level="15" />
-			<grant type="Archetype Feature" name="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_LEND_A_HAND" level="18" />
+			<grant type="Class Feature" name="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_LEND_A_HAND" level="18" />
 			<grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" level="3" spellcasting="Artificer" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" level="3" spellcasting="Artificer" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_AID" level="5" spellcasting="Artificer" prepared="true" />
@@ -43,7 +45,6 @@
 			<grant type="Spell" id="ID_XGE_SPELL_LIFE_TRANSFERENCE" level="13" spellcasting="Artificer" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" level="17" spellcasting="Artificer" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_MASS_CURE_WOUNDS" level="17" spellcasting="Artificer" prepared="true" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SURGEONS_TOOLS" level="3"/>
 		</rules>
 	</element>
 	
@@ -72,6 +73,21 @@
 			<description>Proficiency with surgeon's tools</description>
 		</sheet>
 	</element-->
+	
+	<element name="Tools of the Trade" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_TOOLS_OF_THE_TRADE">
+		<description>
+			<p>By the time you adopt this specialty at 3rd level, you’re deeply familiar with employing its tools.</p>
+			<p class="indent">
+				<strong>
+					<em>Proficiencies.</em>
+				</strong> You gain proficiency with surgeon's tools and herbalism kit, assuming you don’t already have them. You also gain surgeon's tools and an herbalism kit for free—the result of tinkering you’ve done as you’ve prepared for this specialization.
+			</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SURGEONS_TOOLS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+		</rules>
+	</element>
 
 	<element name="Flesh Fetish" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_FLESH_FETISH">
 		<description>
@@ -109,7 +125,7 @@
 		</sheet>
 	</element>
 
-	<element name="Lend a Hand" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_LEND_A_HAND">
+	<element name="Spell-Storing Item" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_LEND_A_HAND">
 		<description>
 			<p>At 18th level, you do not gain the ability to store spells with objects like other Artificers, since to an extent Coriumancers already do this. Instead, whenever you finish a long rest, you can touch one preserved catalyst and make its spell accessible to other creatures at 2nd-level. While holding the modified catalyst, a creature can take an action to produce the spell's effect from it using your spellcasting ability modifier. The spell stays in the object until it has been used a number of times equal to twice your Intelligence modifier (minimum of twice) or until you use this feature again to store a spell in an object. </p>
 		</description>
