@@ -62,7 +62,7 @@
 			<div element="ID_WOTC_UA20190228_CLASS_FEATURE_ARTIFICER_ABILITY_SCORE_IMPROVEMENT" />
 			<div element="ID_WOTC_UA20190228_CLASS_FEATURE_ARTIFICER_ARCANE_ARMAMENT" />
 			<div element="ID_WOTC_UA20190228_CLASS_FEATURE_ARTIFICER_THE_RIGHT_CANTRIP_FOR_THE_JOB" />
-			<div element="ID_WOTC_UA20190228_CLASS_FEATURE_ARTIFICER_SPELL_STORING_ITEM" />
+			<div element="ID_HOMEBREW_CLASS_FEATURE_ARTIFICER_SPELL_STORING_ITEM" />
 			<div element="ID_WOTC_UA20190228_CLASS_FEATURE_ARTIFICER_SOUL_OF_ARTIFICE" />
 		</description>
 		<setters>
@@ -94,7 +94,7 @@
 			<grant type="Class Feature" id="ID_WOTC_UA20190228_CLASS_FEATURE_ARTIFICER_ABILITY_SCORE_IMPROVEMENT" level="4" />
 			<grant type="Class Feature" id="ID_WOTC_UA20190228_CLASS_FEATURE_ARTIFICER_ARCANE_ARMAMENT" level="5" />
 			<grant type="Class Feature" id="ID_WOTC_UA20190228_CLASS_FEATURE_ARTIFICER_THE_RIGHT_CANTRIP_FOR_THE_JOB" level="10" />
-			<grant type="Class Feature" id="ID_WOTC_UA20190228_CLASS_FEATURE_ARTIFICER_SPELL_STORING_ITEM" level="18" />
+			<grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_ARTIFICER_SPELL_STORING_ITEM" level="18" />
 			<grant type="Class Feature" id="ID_WOTC_UA20190228_CLASS_FEATURE_ARTIFICER_SOUL_OF_ARTIFICE" level="20" />
 		</rules>
 		<multiclass id="ID_WOTC_UA20190228_MULTICLASS_ARTIFICER">
@@ -184,6 +184,25 @@
 			<select type="Archetype" name="Artificer Specialist" supports="Homebrew Artificer Specialist" />
 		</rules>
 	</element>
+	<element name="Spell-Storing Item" type="Class Feature" source="Unearthed Arcana: Artificer Revisited" id="ID_HOMEBREW_CLASS_FEATURE_ARTIFICER_SPELL_STORING_ITEM">
+		<description>
+			<p>When you reach 18th level, you learn how to store a spell in an object for repeated use. Whenever you finish a long rest, you can touch one simple or martial weapon or an item that you can use as a spellcasting focus and store a spell in it, choosing one 1st- or 2nd-level spell from the artificer spell list that requires 1 action to cast (you don’t need to have the spell prepared). With the object in hand, a creature can take an action to produce the spell’s effect from it, using your spellcasting ability modifier.</p>
+			<p class="indent">The spell stays in the object until it has been used a number of times equal to twice your Intelligence modifier (minimum of twice) or until you use this feature again.</p>
+		</description>
+		<sheet>
+			<description display="false" >
+				Whenever you finish a long rest, you can touch one simple or martial weapon or an item that you can use as a spellcasting focus and store a spell in it, choosing one 1st- or 2nd-level spell from the artificer spell list that requires 1 action to cast (you don’t need to have the spell prepared). With the object in hand, a creature can take an action to produce the spell’s effect from it, using your spellcasting ability modifier.
+				The spell stays in the object until it has been used {{spell-storing:usage}} times or until you use this feature again.
+			</description>
+		</sheet>
+		<rules>
+			<stat name="spell-storing:intelligence" value="intelligence:modifier" />
+			<stat name="spell-storing:intelligence" value="intelligence:modifier" />
+
+			<stat name="spell-storing:usage" value="2" bonus="spell-storing" />
+			<stat name="spell-storing:usage" value="spell-storing:intelligence" bonus="spell-storing" />
+		</rules>
+	</element>
 	<append id="ID_PHB_SPELL_ACID_SPLASH">
 		<supports>Homebrew Artificer</supports>
 	</append>
@@ -252,7 +271,6 @@
 			<div element="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_TAXIDERMIST" />
 			<div element="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_TROPHY_HUNTER" />
 			<div element="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_CORPSE_EATER" />
-			<div element="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_SPELLSTORE" />
 			<div element="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_LEND_A_HAND" />
 		</description>
 		<setters>
@@ -268,8 +286,7 @@
 			<grant type="Archetype Feature" name="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_TAXIDERMIST" level="5" />
 			<grant type="Archetype Feature" name="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_TROPHY_HUNTER" level="9" />
 			<grant type="Archetype Feature" name="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_CORPSE_EATER" level="15" />
-			<grant type="Class Feature" name="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_SPELLSTORE" level="18" />
-			<grant type="Archetype Feature" name="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_LEND_A_HAND" level="18" />
+			<grant type="Class Feature" name="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_LEND_A_HAND" level="18" />
 			<grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" level="3" spellcasting="Artificer" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" level="3" spellcasting="Artificer" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_AID" level="5" spellcasting="Artificer" prepared="true" />
@@ -369,21 +386,12 @@
 		</sheet>
 	</element>
 
-	<element name="Spell-Storing Item" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_SPELLSTORE">
+	<element name="Lend a Hand" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_LEND_A_HAND">
 		<description>
-			<p>At 18th level, you do not gain the ability to store spells with objects like other Artificers, since to an extent Coriumancers already do this. </p>
-		</description>
-		<sheet display="false">
-			<description>You cannot store spells in objects. Instead, whenever you finish a long rest, you can touch one preserved catalyst and make its spell accessible to other creatures at 2nd-level. While holding the modified catalyst, a creature can take an action to produce the spell's effect from it using your spellcasting ability modifier. The spell stays in the object until it has been used a number of times equal to twice your Intelligence modifier (minimum of twice) or until you use this feature again to store a spell in an object. </description>
-		</sheet>
-	</element>
-	
-	<element name="Lend a Hand" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_LEND_A_HAND">
-		<description>
-			<p>Instead of spell-storing, whenever you finish a long rest, you can touch one preserved catalyst and make its spell accessible to other creatures at 2nd-level. While holding the modified catalyst, a creature can take an action to produce the spell's effect from it using your spellcasting ability modifier. The spell stays in the object until it has been used a number of times equal to twice your Intelligence modifier (minimum of twice) or until you use this feature again to store a spell in an object. </p>
+			<p>At 18th level, you do not gain the ability to store spells with objects like other Artificers, since to an extent Coriumancers already do this. Instead, whenever you finish a long rest, you can touch one preserved catalyst and make its spell accessible to other creatures at 2nd-level. While holding the modified catalyst, a creature can take an action to produce the spell's effect from it using your spellcasting ability modifier. The spell stays in the object until it has been used a number of times equal to twice your Intelligence modifier (minimum of twice) or until you use this feature again to store a spell in an object. </p>
 		</description>
 		<sheet>
-			<description>You cannot store spells in objects. Instead, whenever you finish a long rest, you can touch one preserved catalyst and make its spell accessible to other creatures at 2nd-level. While holding the modified catalyst, a creature can take an action to produce the spell's effect from it using your spellcasting ability modifier. The spell stays in the object until it has been used a number of times equal to twice your Intelligence modifier (minimum of twice) or until you use this feature again to store a spell in an object. </description>
+			<description>Whenever you finish a long rest, you can touch one preserved catalyst and make its spell accessible to other creatures at 2nd-level. While holding the modified catalyst, a creature can take an action to produce the spell's effect from it using your spellcasting ability modifier. The spell stays in the object until it has been used a number of times equal to twice your Intelligence modifier (minimum of twice) or until you use this feature again to store a spell in an object. </description>
 		</sheet>
 	</element>
 
