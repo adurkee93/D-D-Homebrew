@@ -47,15 +47,31 @@
 		</rules>
 	</element>
 	
-	<element name="Tool Proficiency (Surgeon's Tools)" type="Archetype Feature" source="D&amp;D Wiki" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SURGEONS_TOOLS">
+	<element name="Surgeon's Tools" type="Item" source="D&amp;D Wiki" id="ID_WIKI_ITEM_TOOL_SURGEONS_TOOLS">
+		<description>
+			<p>Surgeon's tools enable a character to perform surgery or dissections, including taking specimens for later research.</p>
+			<p class="indent"><strong><em>Components.</em></strong> Surgeon's tools come in a wooden box, and include forceps, two scalpels, a retractor, surgical scissors, a needle with limited sinew for sewing, a bonesaw, a vial of antiseptic and clean linen for bandages.</p>
+			<p class="indent"><strong><em>Arcana.</em></strong> Proficiency with surgeon's tools allows you to unlock more information on Intelligence checks involving wounds and dissection.</p>
+			<p class="indent"><strong><em>Investigation.</em></strong>When you inspect an area for clues, proficiency with surgeon's tools grants additional insight into any blood stains in the area. When you inspect a creature, it grants additional insight into the circumstances of its wounds.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="8">8 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_SURGEONS_TOOLS</set>
+		</setters>
+	</element>
+	
+	<!--element name="Tool Proficiency (Surgeon's Tools)" type="Archetype Feature" source="D&amp;D Wiki" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SURGEONS_TOOLS">
 		<supports>Tool Proficiency</supports>
 		<description>
-			<p>Proficiency with surgeon's tools</p>
+			<p>Surgeon's tools enable a character to perform surgery or dissections, including taking specimens for later research.</p>
 		</description>
 		<sheet>
 			<description>Proficiency with surgeon's tools</description>
 		</sheet>
-	</element>
+	</element-->
 
 	<element name="Flesh Fetish" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_FLESH_FETISH">
 		<description>
