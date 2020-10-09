@@ -31,8 +31,8 @@
 			<grant type="Archetype Feature" name="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_BODYSNATCHER" level="3" />
 			<grant type="Archetype Feature" name="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_TAXIDERMIST" level="5" />
 			<grant type="Archetype Feature" name="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_TROPHY_HUNTER" level="9" />
-			<grant type="Archetype Feature" name="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_LEND_A_HAND" level="11" />
 			<grant type="Archetype Feature" name="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_CORPSE_EATER" level="15" />
+			<grant type="Archetype Feature" name="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_LEND_A_HAND" level="18" />
 			<grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" level="3" spellcasting="Artificer" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" level="3" spellcasting="Artificer" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_AID" level="5" spellcasting="Artificer" prepared="true" />
@@ -95,10 +95,10 @@
 
 	<element name="Lend a Hand" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_LEND_A_HAND">
 		<description>
-			<p>At 11th level, you do not gain the ability to store spells with objects like other Artificers, since to an extent Coriumancers already do this. Instead, whenever you finish a long rest, you can touch one preserved catalyst and make its spell accessible to other creatures at 2nd-level. While holding the modified catalyst, a creature can take an action to produce the spell's effect from it using your spellcasting ability modifier. The spell stays in the object until it has been used a number of times equal to twice your Intelligence modifier (minimum of twice) or until you use this feature again to store a spell in an object. </p>
+			<p>At 18th level, you do not gain the ability to store spells with objects like other Artificers, since to an extent Coriumancers already do this. Instead, whenever you finish a long rest, you can touch one preserved catalyst and make its spell accessible to other creatures at 2nd-level. While holding the modified catalyst, a creature can take an action to produce the spell's effect from it using your spellcasting ability modifier. The spell stays in the object until it has been used a number of times equal to twice your Intelligence modifier (minimum of twice) or until you use this feature again to store a spell in an object. </p>
 		</description>
 		<sheet>
-			<description>At 11th level, you do not gain the ability to store spells with objects like other Artificers, since to an extent Coriumancers already do this. Instead, whenever you finish a long rest, you can touch one preserved catalyst and make its spell accessible to other creatures at 2nd-level. While holding the modified catalyst, a creature can take an action to produce the spell's effect from it using your spellcasting ability modifier. The spell stays in the object until it has been used a number of times equal to twice your Intelligence modifier (minimum of twice) or until you use this feature again to store a spell in an object. </description>
+			<description>You cannot store spells in objects. Instead, whenever you finish a long rest, you can touch one preserved catalyst and make its spell accessible to other creatures at 2nd-level. While holding the modified catalyst, a creature can take an action to produce the spell's effect from it using your spellcasting ability modifier. The spell stays in the object until it has been used a number of times equal to twice your Intelligence modifier (minimum of twice) or until you use this feature again to store a spell in an object. </description>
 		</sheet>
 	</element>
 
@@ -107,7 +107,7 @@
 			<p>At 15th level, you may use a fresh corpse that you are touching as a catalyst, and cast a single spell of a spell level of your choice which grants every status harvestable from the corpse. The spell may target as many creatures within range as you like, but no catalysts may be made from the corpse afterward.</p>
 		</description>
 		<sheet>
-			<description>At 15th level, you may use a fresh corpse that you are touching as a catalyst, and cast a single spell of a spell level of your choice which grants every status harvestable from the corpse. The spell may target as many creatures within range as you like, but no catalysts may be made from the corpse afterward.</description>
+			<description>You may use a fresh corpse that you are touching as a catalyst, and cast a single spell of a spell level of your choice which grants every status harvestable from the corpse. The spell may target as many creatures within range as you like, but no catalysts may be made from the corpse afterward.</description>
 		</sheet>
 	</element>
 
