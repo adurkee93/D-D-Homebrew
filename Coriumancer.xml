@@ -9,7 +9,7 @@
 		</update>
 	</info>
 	
-	<element name="Artificer" type="Class" source="D&amp;D Wiki" id="ID_WIKI_UA20190228_CLASS_ARTIFICER">
+	<element name="Artificer" type="Class" source="Homebrew" id="ID_WIKI_UA20190228_CLASS_ARTIFICER">
 		<description>
 			<p>Masters of unlocking magic in everyday objects, artificers are supreme inventors. They see magic as a complex system waiting to be decoded and controlled. Artificers use tools to channel arcane power, crafting temporary and permanent magical objects. To cast a spell, an artificer could use alchemist’s supplies to create a potent elixir, calligrapher’s supplies to inscribe a sigil of power on an ally’s armor, or tinker’s tools to craft a temporary charm. The magic of artificers is tied to their tools and their talents.</p>
 			<h4>ARCANE SCIENCE</h4>
@@ -168,7 +168,7 @@
 			<description>You produce your artificer spell effects through your tools. You must have a spellcasting focus—specifically thieves’ tools or some kind of artisan’s tool—in hand when you cast any spell with this Spellcasting feature. You must be proficient with the tool to use it in this way.</description>
 		</sheet>
 		<spellcasting name="Artificer" ability="Intelligence" prepare="true">
-			<list known="true">Wiki Artificer</list>
+			<list known="true">Homebrew Artificer</list>
 		</spellcasting>
 		<rules>
 			<grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
@@ -229,12 +229,12 @@
 			<stat name="infusions:vanish" value="intelligence:modifier" bonus="infusions" />
 
 			<!-- select infusions -->
-			<select type="Class Feature" name="Artificer Infusion, Level 2" supports="Wiki Artificer Infusion" number="3" level="2" />
-			<select type="Class Feature" name="Artificer Infusion, Level 4 " supports="Wiki Artificer Infusion" level="4" />
-			<select type="Class Feature" name="Artificer Infusion, Level 7 " supports="Wiki Artificer Infusion" level="7" />
-			<select type="Class Feature" name="Artificer Infusion, Level 11 " supports="Wiki Artificer Infusion" level="11" />
-			<select type="Class Feature" name="Artificer Infusion, Level 15" supports="Wiki Artificer Infusion" level="15" />
-			<select type="Class Feature" name="Artificer Infusion, Level 19" supports="Wiki Artificer Infusion" level="19" />
+			<select type="Class Feature" name="Artificer Infusion, Level 2" supports="UA Artificer Infusion" number="3" level="2" />
+			<select type="Class Feature" name="Artificer Infusion, Level 4 " supports="UA Artificer Infusion" level="4" />
+			<select type="Class Feature" name="Artificer Infusion, Level 7 " supports="UA Artificer Infusion" level="7" />
+			<select type="Class Feature" name="Artificer Infusion, Level 11 " supports="UA Artificer Infusion" level="11" />
+			<select type="Class Feature" name="Artificer Infusion, Level 15" supports="UA Artificer Infusion" level="15" />
+			<select type="Class Feature" name="Artificer Infusion, Level 19" supports="UA Artificer Infusion" level="19" />
 		</rules>
 	</element>
 	<element name="Artificer Specialist" type="Class Feature" source="Unearthed Arcana: Artificer Revisited" id="ID_WOTC_UA20190228_CLASS_FEATURE_ARTIFICER_ARTIFICER_SPECIALIST">
@@ -247,7 +247,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Archetype" name="Artificer Specialist" supports="Wiki Artificer Specialist" />
+			<select type="Archetype" name="Artificer Specialist" supports="Homebrew Artificer Specialist" />
 		</rules>
 	</element>
 	<element name="Tool Expertise" type="Class Feature" source="Unearthed Arcana: Artificer Revisited" id="ID_WOTC_UA20190228_CLASS_FEATURE_ARTIFICER_TOOL_EXPERTISE">
@@ -265,11 +265,11 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Class Feature" name="Improvement Option, Artificer Level 4" supports="Improvement Option,Wiki Artificer,4" level="4" />
-			<select type="Class Feature" name="Improvement Option, Artificer Level 8" supports="Improvement Option,Wiki Artificer,8" level="8" />
-			<select type="Class Feature" name="Improvement Option, Artificer Level 12" supports="Improvement Option,Wiki Artificer,12" level="12" />
-			<select type="Class Feature" name="Improvement Option, Artificer Level 16" supports="Improvement Option,Wiki Artificer,16" level="16" />
-			<select type="Class Feature" name="Improvement Option, Artificer Level 19" supports="Improvement Option,Wiki Artificer,19" level="19" />
+			<select type="Class Feature" name="Improvement Option, Artificer Level 4" supports="Improvement Option,UA Artificer,4" level="4" />
+			<select type="Class Feature" name="Improvement Option, Artificer Level 8" supports="Improvement Option,UA Artificer,8" level="8" />
+			<select type="Class Feature" name="Improvement Option, Artificer Level 12" supports="Improvement Option,UA Artificer,12" level="12" />
+			<select type="Class Feature" name="Improvement Option, Artificer Level 16" supports="Improvement Option,UA Artificer,16" level="16" />
+			<select type="Class Feature" name="Improvement Option, Artificer Level 19" supports="Improvement Option,UA Artificer,19" level="19" />
 		</rules>
 	</element>
 	<element name="Arcane Armament" type="Class Feature" source="Unearthed Arcana: Artificer Revisited" id="ID_WOTC_UA20190228_CLASS_FEATURE_ARTIFICER_ARCANE_ARMAMENT">
@@ -320,8 +320,8 @@
 		</rules>
 	</element>
 	
-	<element name="Coriumancer" type="Archetype" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_CORIUMANCER">
-		<supports>Wiki Artificer Specialist</supports>
+	<element name="Coriumancer" type="Archetype" source="Homebrew" id="ID_WIKI_ARCHETYPE_CORIUMANCER">
+		<supports>Homebrew Artificer Specialist</supports>
 		<description>
 			<p>When the battle’s over, the average party leaves the most valuable loot behind. The Coriumancer recognizes the innate power of flesh, and utilizes their skill to empower their party with the abilities of their defeated foes. The Coriumancer’s expertise allows them to moonlight as a healer as well. </p>
 			<div element="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_TOOLS_OF_THE_TRADE" />
