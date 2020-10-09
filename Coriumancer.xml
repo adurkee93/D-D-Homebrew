@@ -189,8 +189,8 @@
 			<p>When you reach 18th level, you learn how to store a spell in an object for repeated use. Whenever you finish a long rest, you can touch one simple or martial weapon or an item that you can use as a spellcasting focus and store a spell in it, choosing one 1st- or 2nd-level spell from the artificer spell list that requires 1 action to cast (you don’t need to have the spell prepared). With the object in hand, a creature can take an action to produce the spell’s effect from it, using your spellcasting ability modifier.</p>
 			<p class="indent">The spell stays in the object until it has been used a number of times equal to twice your Intelligence modifier (minimum of twice) or until you use this feature again.</p>
 		</description>
-		<sheet>
-			<description display="false" >
+		<sheet display="false" >
+			<description>
 				Whenever you finish a long rest, you can touch one simple or martial weapon or an item that you can use as a spellcasting focus and store a spell in it, choosing one 1st- or 2nd-level spell from the artificer spell list that requires 1 action to cast (you don’t need to have the spell prepared). With the object in hand, a creature can take an action to produce the spell’s effect from it, using your spellcasting ability modifier.
 				The spell stays in the object until it has been used {{spell-storing:usage}} times or until you use this feature again.
 			</description>
