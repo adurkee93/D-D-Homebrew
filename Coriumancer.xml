@@ -17,8 +17,8 @@
 			<div element="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_BODYSNATCHER" />
 			<div element="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_TAXIDERMIST" />
 			<div element="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_TROPHY_HUNTER" />
-			<div element="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_LEND_A_HAND" />
 			<div element="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_CORPSE_EATER" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_LEND_A_HAND" />
 		</description>
 		<setters>
 			<set name="short">The Coriumancer focuses on casting buffs using catalysts created from corpses of defeated foes.</set>
