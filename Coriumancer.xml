@@ -10,7 +10,7 @@
 	</info>
 
 	<element name="Coriumancer" type="Archetype" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_CIRCLEOFTHECLAW">
-		<supports>Artificer Specialist</supports>
+		<supports>UA Artificer Specialist</supports>
 		<description>
 			<p>When the battle’s over, the average party leaves the most valuable loot behind. The Coriumancer recognizes the innate power of flesh, and utilizes their skill to empower their party with the abilities of their defeated foes. The Coriumancer’s expertise allows them to moonlight as a healer as well. </p>
 			<div element="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_FLESH_FETISH" />
@@ -20,7 +20,10 @@
 			<div element="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_LEND_A_HAND" />
 			<div element="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_CORPSE_EATER" />
 		</description>
-		<sheet>
+		<setters>
+			<set name="short">The Coriumancer focuses on casting buffs using catalysts created from corpses of defeated foes.</set>
+		</setters>
+		<sheet display="false">
 			<description>The Coriumancer focuses on casting buffs using catalysts created from corpses of defeated foes.</description>
 		</sheet>
 		<rules>
