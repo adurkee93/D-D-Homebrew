@@ -3,7 +3,10 @@
 	<info>
 		<name>Coriumancer</name>
 		<description>The Artificer Coriumancer from the D&amp;D Wiki.</description>
-		<author url="https://github.com/adurkee93/D-D-Homebrew/blob/main/Coriumancer.xml">Durkmenistan</author>
+		<author url="https://www.dandwiki.com/wiki/Coriumancer_(5e_Subclass)">Durkmenistan</author>
+		<update version="1.0.0">
+			<file name="Coriumancer.xml" url="https://github.com/adurkee93/D-D-Homebrew/blob/main/Coriumancer.xml" />
+		</update>
 	</info>
 
 	<element name="Coriumancer" type="Archetype" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_CIRCLEOFTHECLAW">
