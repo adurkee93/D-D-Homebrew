@@ -357,12 +357,12 @@
 	
 	<element name="Bodysnatcher" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_BODYSNATCHER">
 		<description>
-			<p>Beginning at 3rd level, you acquire the ability to create a basic coriumancy catalyst, a non-magical item derived from a fresh corpse or living body. You must have appropriate tools and proficiency to harvest the specimen. The creature of origin must be of the same or lower level as you, and the catalyst must be properly extracted from the creature. Basic catalysts have a decay rate, with items made from flesh and blood becoming invalid faster than those of horn or carapace. You may analyze an existing specimen you encounter, to determine whether it may function as a basic catalyst.</p>
-			<p>Starting at 3rd level, you may prepare any spells during a long rest for which you have a basic catalyst in your possession. When a spell associated with a basic catalyst is cast, one specimen of that catalyst in the caster’s possession is permanently consumed.</p>
+			<p>Beginning at 3rd level, you acquire the ability to create a basic coriumancy catalyst, a non-magical item derived from a fresh corpse or living body. You must have appropriate tools and proficiency to harvest the specimen. The creature of origin must be of the same or lower level as you, unless said creature was defeated by the player's party, and the catalyst must be properly extracted from the creature. Basic catalysts have a decay rate, with items made from flesh and blood becoming invalid faster than those of horn or carapace. You may analyze an existing specimen you encounter, to determine whether it may function as a basic catalyst.</p>
+			<p>Starting at 3rd level, you may prepare any spells during a long or short rest for which you have a basic catalyst in your possession. When a spell associated with a basic catalyst is cast, one specimen of that catalyst in the caster’s possession is permanently consumed.</p>
 		</description>
 		<sheet>
 			<description>You have the ability to create a basic coriumancy catalyst, a non-magical item derived from a fresh corpse or living body. You must have appropriate tools and proficiency to harvest the specimen. The creature of origin must be of the same or lower level as you, and the catalyst must be properly extracted from the creature. Basic catalysts have a decay rate, with items made from flesh and blood becoming invalid faster than those of horn or carapace. You may analyze an existing specimen you encounter, to determine whether it may function as a basic catalyst.</description>
-			<description>Starting at 3rd level, you may prepare any spells during a long rest for which you have a basic catalyst in your possession. When a spell associated with a basic catalyst is cast, one specimen of that catalyst in the caster’s possession is permanently consumed.</description>
+			<description>Starting at 3rd level, you may prepare any spells during a long or short rest for which you have a basic catalyst in your possession. When a spell associated with a basic catalyst is cast, one specimen of that catalyst in the caster’s possession is permanently consumed.</description>
 		</sheet>
 	</element>
 	
@@ -379,19 +379,10 @@
 
 	<element name="Trophy Hunter" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_TROPHY_HUNTER">
 		<description>
-			<p>At 9th level, you may fashion a basic catalyst from any creature killed by your party, regardless of level. The targets of your catalyst-based casts no longer need to be willing. </p>
+			<p>At 9th level, you may fashion a basic catalyst from any creature, regardless of level. The targets of your catalyst-based casts no longer need to be willing. </p>
 		</description>
 		<sheet>
-			<description>You have the ability to fashion a basic catalyst from any creature killed by your party, regardless of level. The targets of your catalyst-based casts no longer need to be willing. </description>
-		</sheet>
-	</element>
-
-	<element name="Lend a Hand" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_LEND_A_HAND">
-		<description>
-			<p>At 18th level, you do not gain the ability to store spells with objects like other Artificers, since to an extent Coriumancers already do this. Instead, whenever you finish a long rest, you can touch one preserved catalyst and make its spell accessible to other creatures at 2nd-level. While holding the modified catalyst, a creature can take an action to produce the spell's effect from it using your spellcasting ability modifier. The spell stays in the object until it has been used a number of times equal to twice your Intelligence modifier (minimum of twice) or until you use this feature again to store a spell in an object. </p>
-		</description>
-		<sheet>
-			<description>Whenever you finish a long rest, you can touch one preserved catalyst and make its spell accessible to other creatures at 2nd-level. While holding the modified catalyst, a creature can take an action to produce the spell's effect from it using your spellcasting ability modifier. The spell stays in the object until it has been used a number of times equal to twice your Intelligence modifier (minimum of twice) or until you use this feature again to store a spell in an object. </description>
+			<description>You have the ability to fashion a basic catalyst from any creature, regardless of level. The targets of your catalyst-based casts no longer need to be willing. </description>
 		</sheet>
 	</element>
 
@@ -401,6 +392,15 @@
 		</description>
 		<sheet>
 			<description>You may use a fresh corpse that you are touching as a catalyst, and cast a single spell of a spell level of your choice which grants every status harvestable from the corpse. The spell may target as many creatures within range as you like, but no catalysts may be made from the corpse afterward.</description>
+		</sheet>
+	</element>
+
+	<element name="Lend a Hand" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_LEND_A_HAND">
+		<description>
+			<p>At 18th level, you do not gain the ability to store spells with objects like other Artificers, since to an extent Coriumancers already do this. Instead, whenever you finish a long rest, you can touch one preserved catalyst and make its spell accessible to other creatures at 2nd-level. While holding the modified catalyst, a creature can take an action to produce the spell's effect from it using your spellcasting ability modifier. The spell stays in the object until it has been used a number of times equal to twice your Intelligence modifier (minimum of twice) or until you use this feature again to store a spell in an object. </p>
+		</description>
+		<sheet>
+			<description>Whenever you finish a long rest, you can touch one preserved catalyst and make its spell accessible to other creatures at 2nd-level. While holding the modified catalyst, a creature can take an action to produce the spell's effect from it using your spellcasting ability modifier. The spell stays in the object until it has been used a number of times equal to twice your Intelligence modifier (minimum of twice) or until you use this feature again to store a spell in an object. </description>
 		</sheet>
 	</element>
 
