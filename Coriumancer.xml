@@ -335,14 +335,14 @@
 	<element name="Tools of the Trade" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_CORIUMANCER_TOOLS_OF_THE_TRADE">
 		<description>
 			<p>By the time you adopt this specialty at 3rd level, you’re deeply familiar with employing its tools.</p>
-			<p class="indent"><strong><em>Proficiencies.</em></strong>  You gain proficiency with surgeon's tools and leatherworking tools, assuming you don’t already have them. You also gain surgeon's tools and leatherworking tools for free—the result of tinkering you’ve done as you’ve prepared for this specialization.</p>
+			<p class="indent"><strong><em>Proficiencies.</em></strong>  You gain proficiency with surgeon's tools and leatherworker's tools, assuming you don’t already have them. You also gain surgeon's tools and leatherworker's tools for free—the result of tinkering you’ve done as you’ve prepared for this specialization.</p>
 		</description>
 		<sheet display="false">
-			<description>You gain proficiency with surgeon's tools and leatherworking tools, assuming you don’t already have them. You also gain surgeon's tools and leatherworking tools for free—the result of tinkering you’ve done as you’ve prepared for this specialization.</description>
+			<description>You gain proficiency with surgeon's tools and leatherworker's tools, assuming you don’t already have them. You also gain surgeon's tools and leatherworker's tools for free—the result of tinkering you’ve done as you’ve prepared for this specialization.</description>
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SURGEONS_TOOLS" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_LEATHERWORKING_TOOLS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_LEATHERWORKERS_TOOLS" />
 		</rules>
 	</element>
 
